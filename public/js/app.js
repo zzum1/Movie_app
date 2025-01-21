@@ -77,6 +77,7 @@ clickSearch = /*#__PURE__*/function () {
               searchValue.style.margin = '10px';
               searchValue.innerHTML = "\n                <h1>Film: ".concat(movie.Title, "</h1>\n                <p>Years: ").concat(movie.Year, "</p>\n                <a href=\"https://www.imdb.com/title/").concat(movie.imdbID, "\">Details</a>");
               mainContent.appendChild(searchValue);
+              scrollTo(0, 700);
             } else {
               console.log('No movie found');
             }

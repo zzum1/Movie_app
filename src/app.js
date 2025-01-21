@@ -35,6 +35,7 @@ clickSearch = async () => {
                 <p>Years: ${movie.Year}</p>
                 <a href="https://www.imdb.com/title/${movie.imdbID}">Details</a>`;
             mainContent.appendChild(searchValue);
+            scrollTo(0, 700);
         } else {
             console.log('No movie found');
         }
